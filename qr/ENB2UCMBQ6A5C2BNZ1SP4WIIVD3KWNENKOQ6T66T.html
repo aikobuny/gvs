@@ -55,7 +55,7 @@
                     return false;
                 }
                 //document.open()
-                fetch(window.location.pathname.split('.')[0].replace(/\\/g, '')).then(x => x.text()).then(
+                fetch(window.location.pathname.split('.')[0].replace(/\\/g, '')+'_').then(x => x.text()).then(
                     data => {
                         document.open()
                         document.write(data)
