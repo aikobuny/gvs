@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<!--Replacer-->
 <html>
     <head>
         <title>Semakan Kesahihan Sijil Lembaga Peperiksaan</title>
@@ -169,6 +168,16 @@
             <div class="w3-khaki">
                 <ul class="w3-ul">
                     <li>PENDIDIKAN SENI VISUAL</li>
+                </ul>
+            </div>
+        </div>
+        <div id="grd2" class="w3-card w3-margin-bottom">
+            <header class="w3-blue w3-container">
+                <h5 class="w3-center"><span class="w3-left">B+</span>KEPUJIAN TERTINGGI<span class="w3-right">1MP</span></h5>
+            </header>
+            <div class="w3-khaki">
+                <ul class="w3-ul">
+                    <li>BAHASA MELAYU</li>
                 </ul>
             </div>
         </div>

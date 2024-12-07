@@ -1,5 +1,18 @@
 {
-    "ENB2UCMBQ6A5C2BNZ1SP4WIIVD3KWNENKOQ6T66T": {
-        "code": "DN450L732"
+    "DN450L732": {
+        "code": "DN450L732",
+        "year": "2020",
+        "name": "MOHAMAD SYAFFIQ FIRDAUS BIN ZAHARI",
+        "kp": "020403-11-0545",
+        "sk": "SMK SULTAN ISMAIL (2)",
+        "mp": {
+            "BAHASA MELAYU": "B+",
+            "BAHASA INGGERIS": "B",
+            "PENDIDIKAN ISLAM": "C",
+            "SEJARAH": "C",
+            "MATEMATIK": "B",
+            "PENDIDIKAN SENI VISUAL": "A"
+        },
+        "bt": "LAYAK MENDAPAT SIJIL<br>1119(GCE-O) - 6C<br>PERKARA ASAS FARDU 'AIN - LULUS"
     }
 }

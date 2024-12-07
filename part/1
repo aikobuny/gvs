@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Semakan Kesahihan Sijil Lembaga Peperiksaan</title>
+        <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><link href="/w3.css" rel="stylesheet">
+        <style>
+            input { text-transform: uppercase; }
+            input:placeholder-shown { text-transform: initial; }
+            #msg { color: red; font-style: italic;}
+        </style>
+	    <script src="/w3.js"></script>
+    </head>
+    <body class="w3-container">
+        <div id="rec" class="w3-panel w3-card">
+            <div class="w3-margin-top">
+                <div class="w3-cell"><img src="/jata.png"></div>
+                <div class="w3-cell w3-cell-middle" style="line-height:1;">
+                <div class="w3-margin-left">
+                    <b class="w3-large">KEMENTERIAN PENDIDIKAN MALAYSIA</b><br>
+                    <b><i>MINISTRY OF EDUCATION MALAYSIA</i></b>
+                    </div>
+                </div>
+            </div>
+            <p style="line-height:1;">
+                <b class="w3-large">LEMBAGA PEPERIKSAAN</b><br>
+                <b><i>EXAMINATIONS SYNDICATE</i></b>
+            </p>
+            <p class="w3-large w3-center" style="line-height:1.3;">
+            <br>
+            
+            <b>SIJIL PELAJARAN MALAYSIA TAHUN 

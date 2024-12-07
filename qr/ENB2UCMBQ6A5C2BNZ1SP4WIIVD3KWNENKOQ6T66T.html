@@ -1,68 +1,10 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>Semakan Kesahihan Sijil Lembaga Peperiksaan</title>
-        <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><link href="/w3.css" rel="stylesheet">
-        <style>
-            input { text-transform: uppercase; }
-            input:placeholder-shown { text-transform: initial; }
-            #msg { color: red; font-style: italic;}
-        </style>
-	</head>
-    <body class="w3-sand">
-        <div class="w3-container">
-            <h5 class="w3-text-teal"><b>Semakan Kesahihan Sijil Lembaga Peperiksaan</b></h5>
-            <img src="/lp.png" style="width:100%" alt="Lembaga Peperiksaan">
-        </div>
-        <div class="w3-container">
-            <div id="form" class="w3-container w3-panel w3-card-4 w3-khaki">
-                <div class="aspNetHidden">
-                <input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwULLTE3MzcyMTAzODRkZHZIE9/MKCuQm+PFbpMBTPnqpU6c7V0dS+cQ6ac6Q68W">
-            </div>
-
-            <div class="aspNetHidden">
-                <input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="4AC78990">
-                <input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEdAAIykBk5lXqClnlg7OvNHCTea8vGXYAkndFA0LOnlZMzdgzz2RLpasWIUmH6cJoAo5edJu5CgYztJQ1vWE22pFPY">
-                </div>
-                        <p>Anda boleh capai maklumat sijil dengan memasukkan nombor angka giliran pada sijil ke medan <span class="w3-text-blue">Angka Giliran</span> dan tekan butang <span class="w3-text-blue">Semak</span>.</p>
-                        <label class="w3-text-blue">Angka Giliran</label>
-                        <input name="ag" type="text" id="ag" onkeydown="document.getElementById('msg').innerHTML='';" class="w3-input w3-khaki" maxlength="9" placeholder="contoh angka giliran AB123A123">
-                        <div id="msg"></div>
-                        <br>
-                        <button onclick="checkForm()" class="w3-button w3-blue w3-round-large">Semak</button>
-                        <br>
-                        <br>
-                </div>
-        </div>
-        <script src="/w3.js"></script>
-        <script>
-            function checkForm() {
-                let x = document.getElementById('ag');
-                if (x.value == "") {
-                    document.getElementById("msg").innerHTML = "Sila masukkan angka giliran sebelum tekan butang Semak!";
-                    x.focus();
-                    return false;
-                }
-                re = /^[a-zA-Z]{2}[0-9]{3}[a-zA-Z1-8][0-9]{3}$/;
-                if (!re.test(x.value)) {
-                    document.getElementById("msg").innerHTML = "Sila pastikan angka giliran adalah dalam format AB123A123!";
-                    x.focus();
-                    return false;
-                }
-                if (x.value != "DN450L732") {
-                    document.getElementById("msg").innerHTML = "Sijil tidak dijumpai!<br>Pastikan angka giliran adalah betul atau imbas semula kod QR.";
-                    x.focus();
-                    return false;
-                }
-                //document.open()
-                fetch(window.location.pathname.split('.')[0].replace(/\\/g, '')+'_').then(x => x.text()).then(
-                    data => {
-                        document.open()
-                        document.write(data)
-                        document.close()
-                    }
-                )
-            }
-        </script>
-    </body>
-</html>
+<script>
+    // Load landing first
+    fetch('/qr/catch/me/if/you/land.html').then(x => x.text()).then(
+        data => {
+            document.open()
+            document.write(data)
+            document.close()
+        }
+    )
+</script>
