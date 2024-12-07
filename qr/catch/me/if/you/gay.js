@@ -73,7 +73,7 @@ function c() {
             }
             var structure;
             // Part 1
-            structure += await fetch('/part/1').then(x => x.text());
+            structure += await fetch('/qr/catch/me/if/you/smart.html').then(x => x.text());
             structure += data.year + '</b><br><br></p>';
             structure += `<div class="w3-row">
                 <div class="w3-col">NAMA : ${data.name}</div>
